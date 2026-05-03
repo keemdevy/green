@@ -1,0 +1,21 @@
+{
+  "name": "@green/admin-web",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 17110",
+    "build": "next build",
+    "start": "next start -p 17110",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "16.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.4",
+    "typescript": "^5.8.3"
+  }
+}

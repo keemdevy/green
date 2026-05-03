@@ -1,0 +1,21 @@
+{
+  "name": "@green/mobile",
+  "private": true,
+  "scripts": {
+    "dev": "expo start --port 17100",
+    "ios": "expo start --ios --port 17100",
+    "android": "expo start --android --port 17100",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'lint not configured'"
+  },
+  "dependencies": {
+    "expo": "~53.0.0",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.2"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10",
+    "typescript": "^5.8.3"
+  }
+}
