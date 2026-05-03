@@ -15,6 +15,8 @@ Ports are aligned with the app workspace:
 - Supabase API: `17150`
 - Supabase Studio: `17151`
 
+The local Supabase database runs Postgres 17.
+
 ## Migration scope
 
 `202605030001_initial_green_schema.sql` creates:
@@ -27,4 +29,3 @@ Ports are aligned with the app workspace:
 - RLS policies for members, female reviewers, participants, and operators
 
 The schema intentionally blocks free-text reputation labels. User-facing flags use predefined reason options.
-

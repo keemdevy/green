@@ -39,6 +39,7 @@ supabase db reset
 ```
 
 The initial schema includes users, profiles, green flags, matches, evaluations, reports, sanctions, appeals, predefined reason options, and first-pass RLS policies.
+Local Supabase uses Postgres 17 on port `17130`.
 
 ### Docker
 

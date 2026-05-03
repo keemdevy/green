@@ -9,3 +9,5 @@ dist
 .expo-shared
 coverage
 *.tsbuildinfo
+supabase/.branches
+supabase/.temp
