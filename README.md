@@ -29,6 +29,17 @@ pnpm --filter @green/api dev
 - `@green/config`: Green 전용 포트, API URL, 정책 상수
 - `@green/api-client`: typed fetch client
 
+### Database
+
+Supabase migration files live in `supabase/migrations`.
+
+```bash
+supabase start
+supabase db reset
+```
+
+The initial schema includes users, profiles, green flags, matches, evaluations, reports, sanctions, appeals, predefined reason options, and first-pass RLS policies.
+
 ### Docker
 
 ```bash

@@ -1,0 +1,26 @@
+project_id = "green"
+
+[api]
+enabled = true
+port = 17150
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 17130
+shadow_port = 17131
+major_version = 16
+
+[studio]
+enabled = true
+port = 17151
+
+[auth]
+enabled = true
+site_url = "http://localhost:17100"
+additional_redirect_urls = ["http://localhost:17110"]
+
+[storage]
+enabled = true
+
