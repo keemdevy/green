@@ -1,23 +1,28 @@
 {
   "name": "@green/mobile",
   "private": true,
+  "main": "index.ts",
   "scripts": {
     "dev": "expo start --port 17100",
+    "web": "expo start --web --port 17100",
     "ios": "expo start --ios --port 17100",
     "android": "expo start --android --port 17100",
     "typecheck": "tsc --noEmit",
     "lint": "echo 'lint not configured'"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~5.0.5",
     "@green/config": "workspace:*",
     "@green/domain": "workspace:*",
     "expo": "~53.0.0",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-dom": "19.0.0",
+    "react-native": "0.79.6",
+    "react-native-web": "^0.20.0"
   },
   "devDependencies": {
     "@types/react": "~19.0.10",
-    "typescript": "^5.8.3"
+    "typescript": "~5.8.3"
   }
 }
