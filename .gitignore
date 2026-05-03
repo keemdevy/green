@@ -2,8 +2,10 @@ node_modules
 .pnpm-store
 .env
 .env.*
+!.env.example
 dist
 .next
 .expo
 .expo-shared
 coverage
+*.tsbuildinfo

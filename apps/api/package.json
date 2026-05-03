@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "typecheck": "echo 'typecheck not configured'",
-    "lint": "echo 'lint not configured'"
+    "typecheck": "node --check src/server.js",
+    "lint": "node --check src/server.js"
   }
 }

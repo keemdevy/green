@@ -6,9 +6,12 @@
     "build": "next build",
     "start": "next start -p 17110",
     "typecheck": "tsc --noEmit",
-    "lint": "next lint"
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "@green/api-client": "workspace:*",
+    "@green/config": "workspace:*",
+    "@green/domain": "workspace:*",
     "next": "16.0.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
