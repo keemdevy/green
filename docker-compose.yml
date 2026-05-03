@@ -1,0 +1,48 @@
+services:
+  admin-web:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "corepack enable && pnpm install && pnpm --filter @green/admin-web dev"
+    ports:
+      - "17110:17110"
+    environment:
+      - PORT=17110
+      - NEXT_PUBLIC_API_URL=http://localhost:17120
+
+  api:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "corepack enable && pnpm install && pnpm --filter @green/api dev"
+    ports:
+      - "17120:17120"
+    environment:
+      - PORT=17120
+
+  mobile:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: sh -c "corepack enable && pnpm install && pnpm --filter @green/mobile dev"
+    ports:
+      - "17100:17100"
+    environment:
+      - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0
+
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - "17130:5432"
+    environment:
+      - POSTGRES_USER=green
+      - POSTGRES_PASSWORD=green
+      - POSTGRES_DB=green
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "17140:6379"

@@ -1,0 +1,11 @@
+{
+  "name": "@green/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "typecheck": "echo 'typecheck not configured'",
+    "lint": "echo 'lint not configured'"
+  }
+}
